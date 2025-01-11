@@ -1,0 +1,238 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: grey;
+}
+.task-item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: yellow;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.done-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.done-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+.header {
+    display: flex;
+    padding: 8px; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    color: yellow;
+    margin: 20px;
+}
+.navlinks{
+    display: flex;
+    gap: 10px;
+   margin-right: 300px;
+    
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: yellow;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.pfooter {
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: yellow;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+
+.email, .github {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: ease 0.7s;
+}
+
+.email:hover {
+    color: #007bff; 
+    scale: 1.3;
+}
+.github:hover{
+    scale: 1.5;
+}
+
+.input{
+    color: yellow;
+    background-color: black;
+    border-radius: 8px;
+    height: 50px;
+    margin-left: 750px;
+    
+}
+.input:focus{
+    border: 1px solid yellow;
+}
+.btnsubmit{
+    color: yellow;
+    background-color: black;
+    height: 50px;
+    width: 100px;
+    border-radius: 14px;
+    border: yellow;
+    transition: ease 1.1s;
+    -webkit-box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+}
+.btnsubmit:hover{
+    color: black;
+    background-color: yellow;
+
+}
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    padding: 25px;
+}
+
+
+
+.motivationcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.h1mot{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+.helpbtn{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: yellow;
+    border: none;
+    border-radius: 8px;
+    margin: 15px;
+    transition: ease 1.1s;
+    -webkit-box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px 11px 23px 0px rgba(0,0,0,0.75);
+}
+.helpbtn:hover{
+    
+    background-color: yellow;
+    color: black;
+}
+
+.author{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.quote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ffd900;
+    width: 50%;
+    border-radius: 11px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #eaff00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
